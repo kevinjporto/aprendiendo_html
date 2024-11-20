@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <!--Ejemplo-->
+    <!--Aquí, un enlace no visitado aparecerá en verde y sin subrayado. 
+    Un enlace visitado aparecerá en rosa y sin subrayado. 
+    Un enlace activo aparecerá en amarillo y subrayado. Además, al pasar el ratón sobre un enlace (a:hover), 
+    se volverá rojo y subrayado:
+    -->
+    <style>
+        a:link {
+          color: green;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:visited {
+          color: pink;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:hover {
+          color: red;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        
+        a:active {
+          color: yellow;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+
+    /*-----Botones de enlace Un enlace también se puede diseñar como un botón mediante el uso de CSS:----*/
+    
+        a:link, a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover, a:active {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--Colores de enlaces HTML
+    De forma predeterminada, aparecerá un enlace como este (en todos los navegadores):
+
+    Un enlace no visitado está subrayado y en azul.
+    Un enlace visitado está subrayado y en color morado.
+    Un enlace activo está subrayado y en rojo.
+    Puede cambiar los colores del estado del enlace mediante CSS:-->
+    
+    <h2>Link Colors</h2>
+    <p>You can change the default colors of links</p>
+    <a href="html_images.asp" target="_blank">HTML Images</a> 
+
+</body>

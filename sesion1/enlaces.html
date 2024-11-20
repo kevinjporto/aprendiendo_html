@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!--Enlaces HTML - Sintaxis
+    La <a>etiqueta HTML define un hipervínculo. Tiene la siguiente <sintaxis:-->
+    <a href="url">link text</a>
+
+    <!--El atributo más importante del <a> elemento es el hrefatributo , que indica el destino del enlace.
+    El texto del enlace es la parte que será visible para el lector.
+    Al hacer clic en el texto del enlace, el lector será enviado a la dirección URL especificada.-->
+
+    <!--Ejemplo-->
+    <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+
+    <!--Enlaces HTML: el atributo target
+    De forma predeterminada, la página vinculada se mostrará en la ventana actual del navegador. Para cambiar esto, debe especificar otro destino para el vínculo.
+
+    El targetatributo especifica dónde abrir el documento vinculado.
+
+    El targetatributo puede tener uno de los siguientes valores:
+
+    _self- Predeterminado. Abre el documento en la misma ventana o pestaña en la que se hizo clic.
+    _blank- Abre el documento en una nueva ventana o pestaña
+    _parent- Abre el documento en el marco principal.
+    _top- Abre el documento en el cuerpo completo de la ventana.-->
+
+    <a href="https://www.w3schools.com/" target="_top">Visit W3Schools!</a>
+    
+    <!--URL absolutas vs. URL relativas
+    Ambos ejemplos anteriores utilizan una URL absoluta (una dirección web completa) en el hrefatributo.
+    Un enlace local (un enlace a una página dentro del mismo sitio web) se especifica con una URL relativa 
+    (sin la parte "https://www"):-->
+
+    <h2>Absolute URLs</h2>
+    <p><a href="https://www.w3.org/">W3C</a></p>
+    <p><a href="https://www.google.com/">Google</a></p>
+
+    <h2>Relative URLs</h2>
+    <p><a href="html_images.asp">HTML Images</a></p>
+    <p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+    <!--Enlaces HTML: utilizar una imagen como enlace
+    Para usar una imagen como enlace, simplemente coloque la <img> 
+    etiqueta dentro de la <a>etiqueta:-->
+    
+        
+    <h2>Image as a Link</h2>
+    <p>The image below is a link. Try to click on it.</p>
+    <a href="default.asp"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+
+    <!--Enlace a una dirección de correo electrónico
+    Úselo mailto:dentro del hrefatributo para crear un enlace que abra el programa de correo 
+    electrónico del usuario (para permitirle enviar un nuevo correo electrónico):-->
+
+    <a href="mailto:someone@example.com">Send email</a>
+
+    <!--Botón como enlace
+    Para utilizar un botón HTML como enlace, debes agregar algún código JavaScript.
+    JavaScript le permite especificar qué sucede en determinados eventos, como cuando se hace clic en un botón:-->
+    
+    <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+    <!--Títulos de enlaces
+    El titleatributo especifica información adicional sobre un elemento. La información se muestra generalmente como un texto 
+    de información sobre herramientas cuando el mouse se mueve sobre el elemento.-->
+
+    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+</body>

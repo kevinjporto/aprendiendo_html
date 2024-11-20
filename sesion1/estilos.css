@@ -1,0 +1,27 @@
+body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+  }
+
+/*--------------Borde CSS define un borde alrededor de un elemento HTML. --------------*/
+
+  p {
+    border: 2px solid rgb(0, 0, 0);
+  }
+
+/*--------------Relleno CSS define un relleno (espacio) entre el texto y el borde. --------------*/
+
+  p {
+    padding: 30px;
+  }
+
+/*--------------Margen CSS define un margen (espacio) fuera del borde. --------------*/
+
+p {
+    margin: 50px;
+  }
