@@ -1,0 +1,109 @@
+<!--Tamaños de tablas HTML-->
+<!--Las tablas HTML pueden tener diferentes tamaños para cada columna, fila o toda la tabla.-->
+<!--Utilice el styleatributo con las propiedades widtho height para especificar el tamaño de una tabla, fila o columna.-->
+
+<!--Ancho de tabla HTML
+Para establecer el ancho de una tabla, agregue el style atributo al <table> elemento:-->
+
+<table style="width:100%">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+</table>
+
+<!--Ancho de columna de tabla HTML
+
+Para establecer el tamaño de una columna específica, agregue el style atributo en un elemento <th> o <td>:-->
+
+    <!DOCTYPE html>
+    <html>
+    <style>
+    table, th, td {
+      border:1px solid black;
+      border-collapse: collapse;
+    }
+    </style>
+    <body>
+    
+    <h2>Set the first column to 70% of the table width</h2>
+    
+    <table style="width:100%">
+      <tr>
+        <th style="width:70%">Firstname</th>
+        <th>Lastname</th> 
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+    
+    </body>
+    </html>
+    
+<!--Altura de fila de tabla HTML
+ 	 
+Para establecer la altura de una fila específica, agregue el style atributo en un elemento de fila de la tabla:-->
+
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<body>
+
+<h2>Set the height of the second row to 200 pixels</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr style="height:200px">
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+

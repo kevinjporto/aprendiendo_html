@@ -1,0 +1,104 @@
+<!--Con los mapas de imágenes HTML, puedes crear áreas en las que se pueda hacer clic en una imagen.-->
+
+<!--Mapas de imágenes
+La etiqueta HTML <map>define un mapa de imagen. Un mapa de imagen es una imagen con áreas en las que se puede hacer clic. 
+Las áreas se definen con una o más <area> etiquetas.
+
+Intente hacer clic en la computadora, el teléfono o la taza de café en la imagen a continuación:-->
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+<!--¿Cómo funciona?
+La idea detrás de un mapa de imágenes es que puedas realizar diferentes acciones dependiendo de dónde hagas clic en la imagen.
+
+Para crear un mapa de imágenes, necesitas una imagen y algún código HTML que describa las áreas en las que se puede hacer clic.
+
+-->
+
+<!--La imagen
+La imagen se inserta mediante la <img>etiqueta. La única diferencia con otras imágenes es que se debe agregar un usemap atributo:-->
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<!--El usemapvalor comienza con un hashtag #seguido del nombre del mapa de imagen y se utiliza 
+para crear una relación entre la imagen y el mapa de imagen.-->
+
+
+<!--Crear mapa de imagen
+Luego, añade un <map>elemento.
+
+El <map>elemento se utiliza para crear un mapa de imagen y está vinculado a la imagen mediante el name atributo requerido:-->
+
+<map name="workmap"> <!--El nameatributo debe tener el mismo valor que el atributo <img>de usemap.-->
+
+<!--Las Áreas
+A continuación, añade las áreas en las que se puede hacer clic.
+
+Un área en la que se puede hacer clic se define mediante un <area>elemento.
+
+Forma
+Debes definir la forma del área en la que se puede hacer clic y puedes elegir uno de estos valores:
+
+rect- define una región rectangular
+circle- define una región circular
+poly- define una región poligonal
+default- define toda la región
+También debes definir algunas coordenadas para poder colocar el área cliqueable sobre la imagen. -->
+
+<!--Forma="rect"
+Las coordenadas shape="rect"vienen en pares, una para el eje x y otra para el eje y.
+
+Entonces, las coordenadas 34,44 están ubicadas a 34 píxeles del margen izquierdo y a 44 píxeles de la parte superior:-->
+
+<!--Las coordenadas 270,350se encuentran a 270 píxeles del margen izquierdo y 350 píxeles de la parte superior:-->
+
+<!--Ahora tenemos suficientes datos para crear un área rectangular en la que se pueda hacer clic:-->
+
+<area shape="rect" coords="34, 44, 270, 350" href="computer.htm">
+
+<!--Forma="círculo"
+Para agregar un área circular, primero ubique las coordenadas del centro del círculo: 337,300-->
+
+<!--Luego especifica el radio del círculo: 44píxeles-->
+<!--Ahora tienes suficientes datos para crear un área circular en la que se puede hacer clic:-->
+
+<area shape="circle" coords="337, 300, 44" href="coffee.htm">
+
+<!--Esta es el área en la que se puede hacer clic y que enviará al usuario a la página "coffee.htm":-->
+
+<!--Forma="poli"
+Contiene shape="poly"varios puntos de coordenadas, lo que crea una forma formada por líneas rectas (un polígono).
+
+Esto se puede utilizar para crear cualquier forma.
+
+¡Tal vez con forma de croissant!
+
+¿Cómo podemos hacer que el croissant de la imagen de abajo se convierta en un enlace en el que se pueda hacer clic?-->
+
+<!--Tenemos que encontrar las coordenadas x e y para todos los bordes del croissant:-->
+
+<!--Las coordenadas vienen en pares, una para el eje x y otra para el eje y:-->
+
+<area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" 
+href="croissant.htm">
+
+<!--Mapa de imagen y JavaScript
+Un área en la que se puede hacer clic también puede activar una función de JavaScript.
+
+Agregue un clickevento al <area>elemento para ejecutar una función de JavaScript:-->
+
+<map name="workmap">
+    <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+  </map>
+  
+  <script>
+  function myFunction() {
+    alert("You clicked the coffee cup!");
+  }
+  </script>

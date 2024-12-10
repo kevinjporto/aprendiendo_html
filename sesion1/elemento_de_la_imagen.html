@@ -1,0 +1,36 @@
+<!--Elemento HTML <picture>-->
+
+<!--El <picture>elemento HTML le permite mostrar diferentes imágenes para diferentes dispositivos o tamaños de pantalla.-->
+
+<!--El elemento HTML <picture>
+El <picture>elemento HTML brinda a los desarrolladores web más flexibilidad para especificar recursos de imágenes.
+
+El <picture>elemento contiene uno o más <source>elementos, cada uno de los cuales hace referencia a diferentes imágenes a través 
+del srcset atributo. De esta manera, el navegador puede elegir la imagen que mejor se adapte a la vista actual y/o al dispositivo.
+
+Cada <source>elemento tiene un mediaatributo que define cuándo la imagen es más adecuada.-->
+
+<picture>
+    <source media="(min-width: 650px)" srcset="fondo-pantalla.avif">
+    <source media="(min-width: 465px)" srcset="imagen_repeticion.png">
+    <img src="fondo-pantalla.avif">
+</picture>
+
+<!--Cuándo utilizar el elemento de imagen
+El elemento tiene dos propósitos principales <picture>:
+
+1. Ancho de banda
+Si tiene una pantalla o un dispositivo pequeños, no es necesario cargar un archivo de imagen grande. El navegador utilizará 
+el primer <source> elemento con valores 
+de atributo coincidentes e ignorará cualquiera de los elementos siguientes.
+
+2. Compatibilidad con formatos
+Es posible que algunos navegadores o dispositivos no admitan todos los formatos de imagen. 
+Al utilizar el <picture>elemento, puede agregar imágenes de todos los formatos y el navegador utilizará 
+el primer formato que reconozca e ignorará cualquiera de los siguientes elementos.-->
+
+<picture>
+    <source srcset="img_avatar.png">
+    <source srcset="img_girl.jpg">
+    <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>

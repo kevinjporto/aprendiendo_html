@@ -1,0 +1,101 @@
+<!--Las imágenes pueden mejorar el diseño y la apariencia de una página web.-->
+
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+<img src="img_girl.jpg" alt="Girl in a jacket">
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+<!--Sintaxis de imágenes HTML
+La etiqueta HTML <img>se utiliza para incrustar una imagen en una página web.
+
+Técnicamente, las imágenes no se insertan en una página web, sino que se vinculan a páginas web. La <img>etiqueta 
+crea un espacio de almacenamiento para la imagen a la que se hace referencia.
+
+La <img>etiqueta está vacía, contiene solo atributos y no tiene etiqueta de cierre.
+
+La <img>etiqueta tiene dos atributos obligatorios:
+
+src - Especifica la ruta a la imagen
+alt - Especifica un texto alternativo para la imagen-->
+
+<!--Sintaxis--> <img src="url" alt="alternatetext">
+
+<!--El atributo src
+El src atributo requerido especifica la ruta (URL) a la imagen.
+
+Nota: Cuando se carga una página web, es el navegador el que, en ese momento, obtiene la imagen de un servidor web y 
+la inserta en la página. Por lo tanto, asegúrese de que la imagen permanezca en el mismo lugar en relación con la página web; 
+de lo contrario, sus visitantes verán un 
+icono de enlace roto. El icono de enlace roto y el alt texto se muestran si el navegador no puede encontrar la imagen.-->
+
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+<!--El atributo alt
+El altatributo requerido proporciona un texto alternativo para una imagen,
+si el usuario por alguna razón no puede verla (debido a una conexión lenta, un error en el atributo src o 
+si el usuario usa un lector de pantalla).
+
+El valor del altatributo debe describir la imagen:-->
+
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+<!--Tamaño de la imagen: ancho y alto
+Puede utilizar el styleatributo para especificar el ancho y la altura de una imagen.-->
+
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+
+<!--¿Ancho y alto, o estilo?
+Los atributos width, height, y style son todos válidos en HTML.
+
+Sin embargo, sugerimos utilizar el style atributo . Evita que las hojas de estilo cambien el tamaño de las imágenes:-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+
+<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+</body>
+</html>
+
+<!--Imágenes en otra carpeta
+Si tiene sus imágenes en una subcarpeta, debe incluir el nombre de la carpeta en el src atributo:-->
+
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+<!--Imágenes en otro servidor/sitio web
+Algunos sitios web apuntan a una imagen en otro servidor.
+
+Para apuntar a una imagen en otro servidor, debe especificar una URL absoluta (completa) en el srcatributo:-->
+
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+<!--Imágenes animadas
+HTML permite GIF animados:-->
+
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+
+<!--Imagen como enlace
+Para usar una imagen como enlace, coloque la <img>etiqueta dentro de la <a> etiqueta:-->
+
+<a href="default.asp">
+    <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+
+<!--Imagen flotante
+Utilice la propiedad CSS floatpara dejar que la imagen flote a la derecha o a la izquierda de un texto:-->
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+    The image will float to the right of the text.</p>
+    
+    <p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+    The image will float to the left of the text.</p>

@@ -1,0 +1,166 @@
+<!--Bordes de tabla HTML-->
+<!--Las tablas HTML pueden tener bordes de diferentes estilos y formas.-->
+
+<!--Cómo agregar un borde
+Para agregar un borde, use la borderpropiedad CSS en los elementos table, thy td:-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+  border-color: #96D4D4;
+}
+th, td {
+    background-color: #96D4D4;
+}
+</style>
+</head>
+<body>
+
+<h2>Table With Border</h2>
+
+<p>Use the CSS border property to add a border to the table.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+<!--Bordes de tabla colapsados
+Para evitar tener bordes dobles como en el ejemplo anterior, configure la border-collapse propiedad CSS en collapse.
+
+Esto hará que las fronteras se fusionen en una sola:-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Collapsed Borders</h2>
+<p>If you want the borders to collapse into one border, add the CSS border-collapse property.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+<!--Bordes de tabla de estilos
+Si establece un color de fondo para cada celda y le da al borde un color blanco 
+(el mismo que el fondo del documento), obtendrá la impresión de un borde invisible:-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+</style>
+</head>
+<body>
+
+<h2>Table With Invisible Borders</h2>
+
+<p>Style the table with white borders and a background color of the cells to make the impression of invisible borders.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+<!--Bordes de mesa con puntos
+Con esta border-stylepropiedad, puede establecer la apariencia del borde.
+ 	 	 
+Se permiten los siguientes valores:
+
+dotted     
+dashed     
+solid     
+double     
+groove     
+ridge     
+inset     
+outset     
+none     
+hidden   -->
+
+<!--Color del borde
+Con esta border-color propiedad, puede establecer el color del borde.-->
+
